@@ -180,3 +180,61 @@ label.color-scheme {
     fill: var(--color);
   }
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5em 1em;
+}
+.stats dt { color: #666; margin: 0; }
+.stats dd { font-weight: bold; margin: 0; }
+
+.info.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0.75em 1em;
+  backdrop-filter: blur(4px);
+}
+
+dl.info {
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+.gridlines line { stroke: #ddd; }
+.gridlines path { display: none; }
+
+@keyframes marching-ants {
+  to { stroke-dashoffset: -8; }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
