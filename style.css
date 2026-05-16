@@ -238,3 +238,8 @@ circle.selected {
   stroke-dasharray: 5 3;
   animation: marching-ants 2s linear infinite;
 }
+.projects article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
