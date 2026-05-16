@@ -70,5 +70,12 @@
     "year": "2025",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Tempore, eveniet minus velit, earum aperiam necessitatibus repellendus provident accusamus illum officiis doloribus, eum saepe est aut numquam distinctio pariatur natus totam repellat. Numquam nulla libero sapiente magnam nostrum ex."
-  }
+  },
+  {
+  "title": "Bikewatching",
+  "year": "2025",
+  "image": "https://nayana1729.github.io/lab7/assets/screenshot.png",
+  "description": "A map visualization of bike traffic.",
+  "url": "https://nayana1729.github.io/lab7"
+}
 ]
